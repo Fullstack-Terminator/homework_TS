@@ -16,7 +16,7 @@ const TENTHS_LESS_THAN_HUNDRED: string[] = [
     'zero', 'ten', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'
 ];
 
-function toWords(number: string, asOrdinal: boolean): string {
+function toWords(number: number | string, asOrdinal?: boolean): string {
     let words: string;
     let num: number = parseInt(number, 10);
 
